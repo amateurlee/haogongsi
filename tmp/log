@@ -1,26 +1,3 @@
-2015-02-14T16:24:41.122368+00:00 app[web.1]:     "Please fix your settings." % setting)
-2015-02-14T16:24:41.122278+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 502, in spawn_worker
-2015-02-14T16:24:41.122267+00:00 app[web.1]:     self._setup(name)
-2015-02-14T16:24:41.122272+00:00 app[web.1]:     "Please fix your settings." % setting)
-2015-02-14T16:24:41.122189+00:00 app[web.1]:     return util.import_app(self.app_uri)
-2015-02-14T16:24:41.122191+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
-2015-02-14T16:24:41.122237+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
-2015-02-14T16:24:41.122303+00:00 app[web.1]:     application = get_wsgi_application()
-2015-02-14T16:24:41.122292+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
-2015-02-14T16:24:41.122294+00:00 app[web.1]:     return self.load_wsgiapp()
-2015-02-14T16:24:41.122271+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
-2015-02-14T16:24:41.122285+00:00 app[web.1]:     self.callable = self.load()
-2015-02-14T16:24:41.122308+00:00 app[web.1]:     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
-2015-02-14T16:24:41.122297+00:00 app[web.1]:     return util.import_app(self.app_uri)
-2015-02-14T16:24:41.122361+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 46, in __getattr__
-2015-02-14T16:24:41.122366+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
-2015-02-14T16:24:41.122372+00:00 app[web.1]: 2015-02-14 16:24:41 [10] [INFO] Worker exiting (pid: 10)
-2015-02-14T16:24:41.122309+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 46, in __getattr__
-2015-02-14T16:24:41.122314+00:00 app[web.1]:     self._wrapped = Settings(settings_module)
-2015-02-14T16:24:41.122304+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
-2015-02-14T16:24:41.122312+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 42, in _setup
-2015-02-14T16:24:41.122315+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
-2015-02-14T16:24:41.122335+00:00 app[web.1]: Traceback (most recent call last):
 2015-02-14T16:24:41.122342+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
 2015-02-14T16:24:41.122339+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
 2015-02-14T16:24:41.122343+00:00 app[web.1]:     self.callable = self.load()
@@ -99,3 +76,26 @@
 2015-02-14T16:41:41.112080+00:00 heroku[router]: at=info method=GET path="/admin/login/?next=/admin/" host=haogongsi.herokuapp.com request_id=31ece36f-779c-452c-b683-a88cc99264d5 fwd="124.205.254.4" dyno=web.1 connect=3ms service=39ms status=200 bytes=2370
 2015-02-14T16:41:41.459482+00:00 heroku[router]: at=info method=GET path="/static/admin/css/base.css" host=haogongsi.herokuapp.com request_id=92f4fff4-ea2b-4bf5-a2f1-d358e799c761 fwd="124.205.254.4" dyno=web.1 connect=1ms service=14ms status=404 bytes=2197
 2015-02-14T16:41:41.462515+00:00 heroku[router]: at=info method=GET path="/static/admin/css/login.css" host=haogongsi.herokuapp.com request_id=d25ecb58-b728-4d59-b5ce-fca7fed50eba fwd="124.205.254.4" dyno=web.1 connect=0ms service=19ms status=404 bytes=2200
+2015-02-14T16:44:35.083014+00:00 heroku[api]: Deploy 3ea020e by amateurlee@sina.com
+2015-02-14T16:44:35.083071+00:00 heroku[api]: Release v14 created by amateurlee@sina.com
+2015-02-14T16:44:35.275274+00:00 heroku[web.1]: State changed from up to starting
+2015-02-14T16:44:38.314328+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-02-14T16:44:39.043666+00:00 app[web.1]: 2015-02-14 16:44:39 [10] [INFO] Worker exiting (pid: 10)
+2015-02-14T16:44:39.044658+00:00 app[web.1]: 2015-02-14 16:44:39 [3] [INFO] Handling signal: term
+2015-02-14T16:44:39.044290+00:00 app[web.1]: 2015-02-14 16:44:39 [9] [INFO] Worker exiting (pid: 9)
+2015-02-14T16:44:39.105134+00:00 app[web.1]: 2015-02-14 16:44:39 [3] [INFO] Shutting down: Master
+2015-02-14T16:44:39.821869+00:00 heroku[web.1]: Starting process with command `gunicorn haogongsi.wsgi --log-file -`
+2015-02-14T16:44:40.022955+00:00 heroku[web.1]: Process exited with status 0
+2015-02-14T16:44:41.790325+00:00 app[web.1]: 2015-02-14 16:44:41 [3] [INFO] Starting gunicorn 19.0.0
+2015-02-14T16:44:41.839866+00:00 app[web.1]: 2015-02-14 16:44:41 [10] [INFO] Booting worker with pid: 10
+2015-02-14T16:44:41.798191+00:00 app[web.1]: 2015-02-14 16:44:41 [3] [INFO] Using worker: sync
+2015-02-14T16:44:41.818139+00:00 app[web.1]: 2015-02-14 16:44:41 [9] [INFO] Booting worker with pid: 9
+2015-02-14T16:44:41.798091+00:00 app[web.1]: 2015-02-14 16:44:41 [3] [INFO] Listening at: http://0.0.0.0:4595 (3)
+2015-02-14T16:44:42.267291+00:00 heroku[web.1]: State changed from starting to up
+2015-02-14T16:44:43.409198+00:00 heroku[router]: at=info method=GET path="/admin/login/?next=/admin/" host=haogongsi.herokuapp.com request_id=3721ad27-fc82-4682-8b2c-672cf566b86f fwd="124.205.254.4" dyno=web.1 connect=0ms service=163ms status=200 bytes=2500
+2015-02-14T16:44:43.727136+00:00 heroku[router]: at=info method=GET path="/static/admin/css/base.css" host=haogongsi.herokuapp.com request_id=244e2220-04da-41ba-a045-05844fe38b51 fwd="124.205.254.4" dyno=web.1 connect=0ms service=51ms status=404 bytes=2197
+2015-02-14T16:44:44.141444+00:00 heroku[router]: at=info method=GET path="/static/admin/css/login.css" host=haogongsi.herokuapp.com request_id=8cdbd9cc-5ad9-493a-b616-4442006f5611 fwd="124.205.254.4" dyno=web.1 connect=0ms service=7ms status=404 bytes=2200
+2015-02-14T16:45:27.298431+00:00 heroku[router]: at=info method=POST path="/admin/login/?next=/admin/" host=haogongsi.herokuapp.com request_id=20cdd864-b4ed-46cb-a1c8-10311a4fda6b fwd="124.205.254.4" dyno=web.1 connect=0ms service=100ms status=302 bytes=632
+2015-02-14T16:45:27.598553+00:00 heroku[router]: at=info method=GET path="/admin/" host=haogongsi.herokuapp.com request_id=6809a7a2-924b-42f3-a58f-dfcd703bab5f fwd="124.205.254.4" dyno=web.1 connect=1ms service=33ms status=200 bytes=3216
+2015-02-14T16:45:27.880420+00:00 heroku[router]: at=info method=GET path="/static/admin/css/dashboard.css" host=haogongsi.herokuapp.com request_id=1f14532a-6df2-4916-b876-e75ac683569c fwd="124.205.254.4" dyno=web.1 connect=0ms service=8ms status=404 bytes=2212
+2015-02-14T16:45:27.880422+00:00 heroku[router]: at=info method=GET path="/static/admin/css/base.css" host=haogongsi.herokuapp.com request_id=78c1b6b0-0efa-438a-8363-137fa9498947 fwd="124.205.254.4" dyno=web.1 connect=0ms service=8ms status=404 bytes=2197
