@@ -27,5 +27,8 @@
         # add procfile file contains "web: gunicorn haogongsi.wsgi --log-file -"
         git push heroku master
         heroku ps:scale web=1 (start the app to run procfile command)
-
+    6) normal operation for update fix
+        git add .
+        git commit -a -m "..."
+        git push heroku master
 2. developement
