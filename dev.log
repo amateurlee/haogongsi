@@ -1,0 +1,18 @@
+1. Environment setup 
+    1) create Heroku account
+    2) create cloud9 account and new workspace. 
+    3) open a terminal and run command "wget  https://toolbelt.heroku.com/install-ubuntu.sh & ./install-ubuntu.sh"
+    4) after the there will be heroku command group. 
+    5) setup git with following commands: 
+        git config --global user.name "YOUR NAME"
+        git config --global user.email "YOUR EMAIL ADDRESS"
+        git clone https://github.com/amateurlee/myProj.git
+        # do some modificaiton or copy file to current 'myProj folder
+        git status # status command can check the git files status
+        git add .  # add modification to cache of local git folder. 
+        git commit -a -m "comments for change"  # submit fix to local repository
+        git remote -v    # get the status of remote repository.
+        git fetch origin # get all change from remote repository, but it does not merge
+        git pull master  # get all change from remote repository, and merge to local.
+        git push origin master # upload local change to remote re
+2. developement
