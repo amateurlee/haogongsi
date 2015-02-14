@@ -17,5 +17,10 @@
         git push origin master # upload local change to remote re
         # for newly created local repository by git init and git commit, use following command to push code
         git remote add origin https://github.com/amateurlee/haogongsi.git
-        git push 
+        git push -u origin master
+        # create heroku 
+        heroku login
+        heroku create ( result: Git remote heroku added
+        heroku apps:rename <appName>
+        git push heroku master
 2. developement
