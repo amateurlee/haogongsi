@@ -1,0 +1,101 @@
+2015-02-14T16:24:41.122224+00:00 app[web.1]:     self._setup(name)
+2015-02-14T16:24:41.122180+00:00 app[web.1]:     self.wsgi = self.app.wsgi()
+2015-02-14T16:24:41.122182+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2015-02-14T16:24:41.122230+00:00 app[web.1]:     "Please fix your settings." % setting)
+2015-02-14T16:24:41.122226+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 42, in _setup
+2015-02-14T16:24:41.122235+00:00 app[web.1]:     worker.init_process()
+2015-02-14T16:24:41.122242+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+2015-02-14T16:24:41.122228+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
+2015-02-14T16:24:41.122234+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+2015-02-14T16:24:41.122183+00:00 app[web.1]:     self.callable = self.load()
+2015-02-14T16:24:41.122232+00:00 app[web.1]: Traceback (most recent call last):
+2015-02-14T16:24:41.122243+00:00 app[web.1]:     return self.load_wsgiapp()
+2015-02-14T16:24:41.122256+00:00 app[web.1]:     __import__(module)
+2015-02-14T16:24:41.122241+00:00 app[web.1]:     self.callable = self.load()
+2015-02-14T16:24:41.122274+00:00 app[web.1]: ImproperlyConfigured: The TEMPLATE_DIRS setting must be a tuple. Please fix your settings.
+2015-02-14T16:24:41.122279+00:00 app[web.1]:     worker.init_process()
+2015-02-14T16:24:41.122238+00:00 app[web.1]:     self.wsgi = self.app.wsgi()
+2015-02-14T16:24:41.122185+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+2015-02-14T16:24:41.122239+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2015-02-14T16:24:41.122259+00:00 app[web.1]:     application = get_wsgi_application()
+2015-02-14T16:24:41.122255+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+2015-02-14T16:24:41.122263+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/__init__.py", line 20, in setup
+2015-02-14T16:24:41.122282+00:00 app[web.1]:     self.wsgi = self.app.wsgi()
+2015-02-14T16:24:41.122260+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+2015-02-14T16:24:41.122186+00:00 app[web.1]:     return self.load_wsgiapp()
+2015-02-14T16:24:41.122245+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+2015-02-14T16:24:41.122362+00:00 app[web.1]:     self._setup(name)
+2015-02-14T16:24:41.122364+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 42, in _setup
+2015-02-14T16:24:41.122258+00:00 app[web.1]:   File "/app/haogongsi/wsgi.py", line 14, in <module>
+2015-02-14T16:24:41.122275+00:00 app[web.1]: 2015-02-14 16:24:41 [9] [ERROR] Exception in worker process:
+2015-02-14T16:24:41.122220+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/__init__.py", line 20, in setup
+2015-02-14T16:24:41.122369+00:00 app[web.1]: ImproperlyConfigured: The TEMPLATE_DIRS setting must be a tuple. Please fix your settings.
+2015-02-14T16:24:41.122246+00:00 app[web.1]:     return util.import_app(self.app_uri)
+2015-02-14T16:24:41.122268+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 42, in _setup
+2015-02-14T16:24:41.122370+00:00 app[web.1]: 2015-02-14 16:24:41 [9] [INFO] Worker exiting (pid: 9)
+2015-02-14T16:24:41.122365+00:00 app[web.1]:     self._wrapped = Settings(settings_module)
+2015-02-14T16:24:41.122264+00:00 app[web.1]:     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+2015-02-14T16:24:41.122283+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2015-02-14T16:24:41.122270+00:00 app[web.1]:     self._wrapped = Settings(settings_module)
+2015-02-14T16:24:41.122262+00:00 app[web.1]:     django.setup()
+2015-02-14T16:24:41.122227+00:00 app[web.1]:     self._wrapped = Settings(settings_module)
+2015-02-14T16:24:41.122266+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 46, in __getattr__
+2015-02-14T16:24:41.122368+00:00 app[web.1]:     "Please fix your settings." % setting)
+2015-02-14T16:24:41.122278+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+2015-02-14T16:24:41.122267+00:00 app[web.1]:     self._setup(name)
+2015-02-14T16:24:41.122272+00:00 app[web.1]:     "Please fix your settings." % setting)
+2015-02-14T16:24:41.122189+00:00 app[web.1]:     return util.import_app(self.app_uri)
+2015-02-14T16:24:41.122191+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+2015-02-14T16:24:41.122237+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+2015-02-14T16:24:41.122303+00:00 app[web.1]:     application = get_wsgi_application()
+2015-02-14T16:24:41.122292+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+2015-02-14T16:24:41.122294+00:00 app[web.1]:     return self.load_wsgiapp()
+2015-02-14T16:24:41.122271+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
+2015-02-14T16:24:41.122285+00:00 app[web.1]:     self.callable = self.load()
+2015-02-14T16:24:41.122308+00:00 app[web.1]:     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+2015-02-14T16:24:41.122297+00:00 app[web.1]:     return util.import_app(self.app_uri)
+2015-02-14T16:24:41.122361+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 46, in __getattr__
+2015-02-14T16:24:41.122366+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
+2015-02-14T16:24:41.122372+00:00 app[web.1]: 2015-02-14 16:24:41 [10] [INFO] Worker exiting (pid: 10)
+2015-02-14T16:24:41.122309+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 46, in __getattr__
+2015-02-14T16:24:41.122314+00:00 app[web.1]:     self._wrapped = Settings(settings_module)
+2015-02-14T16:24:41.122304+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+2015-02-14T16:24:41.122312+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 42, in _setup
+2015-02-14T16:24:41.122315+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
+2015-02-14T16:24:41.122335+00:00 app[web.1]: Traceback (most recent call last):
+2015-02-14T16:24:41.122342+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2015-02-14T16:24:41.122339+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+2015-02-14T16:24:41.122343+00:00 app[web.1]:     self.callable = self.load()
+2015-02-14T16:24:41.122347+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+2015-02-14T16:24:41.122350+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+2015-02-14T16:24:41.122276+00:00 app[web.1]: Traceback (most recent call last):
+2015-02-14T16:24:41.122280+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/workers/base.py", line 114, in init_process
+2015-02-14T16:24:41.122358+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/__init__.py", line 20, in setup
+2015-02-14T16:24:41.122311+00:00 app[web.1]:     self._setup(name)
+2015-02-14T16:24:41.122316+00:00 app[web.1]:     "Please fix your settings." % setting)
+2015-02-14T16:24:41.122333+00:00 app[web.1]: ImproperlyConfigured: The TEMPLATE_DIRS setting must be a tuple. Please fix your settings.
+2015-02-14T16:24:41.122340+00:00 app[web.1]:     self.wsgi = self.app.wsgi()
+2015-02-14T16:24:41.122295+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+2015-02-14T16:24:41.122298+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/util.py", line 356, in import_app
+2015-02-14T16:24:41.122305+00:00 app[web.1]:     django.setup()
+2015-02-14T16:24:41.122348+00:00 app[web.1]:     return util.import_app(self.app_uri)
+2015-02-14T16:24:41.122354+00:00 app[web.1]:     application = get_wsgi_application()
+2015-02-14T16:24:41.122336+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/arbiter.py", line 502, in spawn_worker
+2015-02-14T16:24:41.122300+00:00 app[web.1]:     __import__(module)
+2015-02-14T16:24:41.122346+00:00 app[web.1]:     return self.load_wsgiapp()
+2015-02-14T16:24:41.122353+00:00 app[web.1]:   File "/app/haogongsi/wsgi.py", line 14, in <module>
+2015-02-14T16:24:41.122357+00:00 app[web.1]:     django.setup()
+2015-02-14T16:24:41.122301+00:00 app[web.1]:   File "/app/haogongsi/wsgi.py", line 14, in <module>
+2015-02-14T16:24:41.122307+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/__init__.py", line 20, in setup
+2015-02-14T16:24:41.122337+00:00 app[web.1]:     worker.init_process()
+2015-02-14T16:24:41.122344+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+2015-02-14T16:24:41.122351+00:00 app[web.1]:     __import__(module)
+2015-02-14T16:24:41.122355+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+2015-02-14T16:24:41.122360+00:00 app[web.1]:     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+2015-02-14T16:25:11.197386+00:00 app[web.1]: 2015-02-14 16:25:11 [3] [INFO] Shutting down: Master
+2015-02-14T16:25:11.197487+00:00 app[web.1]: 2015-02-14 16:25:11 [3] [INFO] Reason: Worker failed to boot.
+2015-02-14T16:25:11.912391+00:00 heroku[web.1]: State changed from up to crashed
+2015-02-14T16:25:11.903124+00:00 heroku[web.1]: Process exited with status 3
+2015-02-14T16:25:16.551031+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/admin/" host=haogongsi.herokuapp.com request_id=46bc3cd9-7a58-4481-a17b-9cf28a185ece fwd="125.39.68.35" dyno= connect= service= status=503 bytes=
+2015-02-14T16:25:25.846974+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/admin/login/?next=/admin/" host=haogongsi.herokuapp.com request_id=4e031f07-adbe-43fa-9586-5742c48e54e9 fwd="125.39.68.35" dyno= connect= service= status=503 bytes=
+2015-02-14T16:25:37.617291+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=haogongsi.herokuapp.com request_id=b1cb7b89-1b0e-41c3-b51f-cdde4286fd88 fwd="125.39.68.35" dyno= connect= service= status=503 bytes=
