@@ -1,0 +1,1 @@
+web: gunicorn haogongsi.wsgi --log-file -

@@ -20,7 +20,12 @@
         git push -u origin master
         # create heroku 
         heroku login
-        heroku create ( result: Git remote heroku added
+        heroku create ( result: Git remote heroku added)
         heroku apps:rename <appName>
+        heroku logs -tail
+        # add requirement.txt from https://github.com/heroku/python-getting-started/blob/master/requirements.txt to root folder of git.add
+        # add procfile file contains "web: gunicorn haogongsi.wsgi --log-file -"
         git push heroku master
+        
+
 2. developement
