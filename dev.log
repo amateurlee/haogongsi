@@ -26,6 +26,6 @@
         # add requirement.txt from https://github.com/heroku/python-getting-started/blob/master/requirements.txt to root folder of git.add
         # add procfile file contains "web: gunicorn haogongsi.wsgi --log-file -"
         git push heroku master
-        
+        heroku ps:scale web=1 (start the app to run procfile command)
 
 2. developement
