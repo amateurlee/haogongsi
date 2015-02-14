@@ -1,0 +1,13 @@
+
+## installation
+pip install Django[==1.7]
+
+## start project
+django-admin startproject tmpProj
+python manage.py migrate
+python manage.py runserver [0.0.0.0:8000]
+
+
+
+## others
+python manage.py createsuperuser
